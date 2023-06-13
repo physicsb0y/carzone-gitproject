@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'cars.apps.CarsConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
 
     'ckeditor',
     'django.contrib.humanize',
@@ -156,3 +157,13 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+#Email Sending
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST: 'smtp.gmail.com'
+EMAIL_PORT: 587
+EMAIL_HOST_USER: 'dhunganadev023@gmail.com'
+EMAIL_HOST_PASSWORD: 'Passwordhere'
+EMAIL_USE_TLS: True
